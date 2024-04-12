@@ -46,7 +46,7 @@ const BookRoomCta: FC<Props> = (props) => {
 
     const timeDiff = checkoutDate.getTime() - checkinDate.getTime();
 
-    const noOFDays = Math.ceil(timeDiff /(20 * 60 * 60 * 1000))
+    const noOFDays = Math.ceil(timeDiff /(24 * 60 * 60 * 1000))
     return noOFDays;
   }
 
