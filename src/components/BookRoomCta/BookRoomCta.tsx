@@ -56,13 +56,13 @@ const BookRoomCta: FC<Props> = (props) => {
         <span
           className={`${discount ? "text-gray-400" : ""} font-bold text-lg`}
         >
-          &#8358; {price}
+          &#8358; {price.toLocaleString()}
         </span>
         {discount ? (
           <span className="font-bold text-xl">
             {" "}
             | Discount {discount}%. Now{" "}
-            <span className="text-tertiary-Dark">&#8358; {discountPrice}</span>{" "}
+            <span className="text-tertiary-Dark">&#8358; {discountPrice.toLocaleString()}</span>{" "}
           </span>
         ) : (
           ""

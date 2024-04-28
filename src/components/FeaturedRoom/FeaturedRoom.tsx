@@ -47,7 +47,7 @@ const FeaturedRoom: FC<Props> = (props) => {
             <div className="flex gap-3 flex-col items-center justify-center mr-4">
               <p className="text-xs lg:text-xl text-center">Start From</p>
               <p className="md:font-bold flex font-medium text-lg xl:text-5xl">
-              &#8358; {featuredRoom.price}
+              &#8358; {featuredRoom.price.toLocaleString()}
               </p>
             </div>
             <div className="flex gap-3 flex-col items-center justify-center mr-4">
