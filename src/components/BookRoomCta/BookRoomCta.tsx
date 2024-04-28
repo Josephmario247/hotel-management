@@ -56,13 +56,13 @@ const BookRoomCta: FC<Props> = (props) => {
         <span
           className={`${discount ? "text-gray-400" : ""} font-bold text-lg`}
         >
-          $ {price}
+          &#8358; {price}
         </span>
         {discount ? (
           <span className="font-bold text-xl">
             {" "}
             | Discount {discount}%. Now{" "}
-            <span className="text-tertiary-Dark">$ {discountPrice}</span>{" "}
+            <span className="text-tertiary-Dark">&#8358; {discountPrice}</span>{" "}
           </span>
         ) : (
           ""
@@ -142,7 +142,7 @@ const BookRoomCta: FC<Props> = (props) => {
         </div>
       </div>
       {calcNoOfDays() > 0 ? <p className="mt-3 ">
-        Total Price: $ {calcNoOfDays() * discountPrice}
+        Total Price: &#8358; {calcNoOfDays() * discountPrice}
       </p> : <>  </>}
 
       <button disabled={isBooked} onClick={handleBookNowClick} className="btn-primary w-full mt-6 disabled:bg-gray-500 disabled:cursor-not-allowed"> {isBooked ? "BOOKED" : "BOOKED Now"}</button>
